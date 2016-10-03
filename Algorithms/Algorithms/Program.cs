@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Algorithms.Array_Strings;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,8 @@ namespace Algorithms
     {
         static void Main(string[] args)
         {
+            ArrayAndStrings.UniqueCharCount_2("abcdefghijklmnopqrstuyuiojgjnl");
+            Console.ReadLine();
         }
     }
 }
