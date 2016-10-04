@@ -10,7 +10,8 @@ namespace Algorithms
     {
         static void Main(string[] args)
         {
-            ArrayAndStrings.UniqueCharCount_2("abcdefghijklmnopqrstuyuiojgjnl");
+            //ArrayAndStrings.UniqueCharCount_2("abcdefghijklmnopqrstuyuiojgjnl");
+            ArrayAndStrings.StringPermutation_1("abcddeffgt", "adcbdeffky");
             Console.ReadLine();
         }
     }
