@@ -24,5 +24,26 @@ namespace Algorithms.Array_Strings
             }
             return word;
         }
+
+        public static char[] StringTrim(char[] word)
+        {
+
+            int maxI = 0; // an optimisaiton so it doesn't iterate through chars already encountered
+            for (int i = 0; i < word.Length; i++)
+            {
+                
+                if (char.IsWhiteSpace(word[i])) word[i] = '\0';
+                else {
+                    //maxI = i;
+                    break; }
+            }
+
+            for (int i = word.Length - 1; i > maxI; i--)
+            {
+                if (Char.IsWhiteSpace(word[i])) word[i] = '\0';
+            }
+
+            return word;
+        }
     }
 }

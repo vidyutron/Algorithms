@@ -11,7 +11,9 @@ namespace Algorithms
         static void Main(string[] args)
         {
             //ArrayAndStrings.UniqueCharCount_2("abcdefghijklmnopqrstuyuiojgjnl");
-            ArrayAndStrings.StringPermutation_1("abcddeffgt", "adcbdeffky");
+            //ArrayAndStrings.StringPermutation_1("abcddeffgt", "adcbdeffky");
+            //ArrayAndStrings.StringTrimAndReplace("Mr John Smith     ");
+            ArrayAndStrings.StringCompression("aadbffgtyuaaa");
             Console.ReadLine();
         }
     }

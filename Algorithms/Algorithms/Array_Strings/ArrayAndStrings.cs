@@ -108,6 +108,38 @@ namespace Algorithms.Array_Strings
             else { Console.WriteLine("Empty string"); }
         }
 
+        public static void StringTrimAndReplace(string word)
+        {
+            var tempChar = new string(Helper.StringTrim(word.ToCharArray()));
+            tempChar.Replace(" ", "%20");
+            Console.WriteLine($"Trimmed and Replaced String is {tempChar}");
+        }
 
+        public static void StringCompression(string word)
+        {
+            if (!string.IsNullOrEmpty(word))
+            {
+                var compressedString = new StringBuilder();
+                var tempCounter = 1;
+                for (int i = 0; i < word.Length; i++)
+                {
+                    if (i<word.Length-1 && word[i].Equals(word[i + 1]))
+                        tempCounter++;
+                    else
+                    {
+                        if (tempCounter > 1)
+                            compressedString.Append(word[i] + tempCounter.ToString());
+                        else
+                            compressedString.Append(word[i]);
+                        tempCounter = 1;
+                    }
+                }
+                Console.WriteLine(compressedString);
+            }
+            else
+            {
+                Console.WriteLine("Empty or null strring");
+            }
+        }
     }
 }
