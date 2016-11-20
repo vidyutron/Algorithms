@@ -13,7 +13,8 @@ namespace Algorithms
             //ArrayAndStrings.UniqueCharCount_2("abcdefghijklmnopqrstuyuiojgjnl");
             //ArrayAndStrings.StringPermutation_1("abcddeffgt", "adcbdeffky");
             //ArrayAndStrings.StringTrimAndReplace("Mr John Smith     ");
-            ArrayAndStrings.StringCompression("aadbffgtyuaaa");
+            //ArrayAndStrings.StringCompression("aadbffgtyuaaa");
+            ArrayAndStrings.StringSubstringRotation("erbottlewat", "waterbottle");
             Console.ReadLine();
         }
     }

@@ -141,5 +141,31 @@ namespace Algorithms.Array_Strings
                 Console.WriteLine("Empty or null strring");
             }
         }
+
+        public static void StringSubstringRotation(string word, string subString)
+        {
+            if (!string.IsNullOrEmpty(word) && !string.IsNullOrEmpty(subString))
+            {
+                var stringStack = new Stack<char>();
+                for(int i = subString.Length - 1; i >= 0; i--)
+                {
+                    stringStack.Push(subString[i]);
+                }
+                foreach (var item in subString)
+                {
+                    var tempChar=stringStack.Pop();
+                    var tempSubString = stringStack.ToString() + tempChar.ToString();
+                    if (tempSubString.Equals(word, StringComparison.OrdinalIgnoreCase))
+                    {
+                        Console.WriteLine($"The word: {word} is roatated string of: {subString}");
+                        break;
+                    }
+
+                }
+
+            }
+            else
+                Console.WriteLine("Empty String provided");
+        }
     }
 }

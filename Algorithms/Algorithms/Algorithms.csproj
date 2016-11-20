@@ -45,6 +45,9 @@
     <Compile Include="Array_Strings\Helper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search_Sort\Bubble_Sort.cs" />
+    <Compile Include="Search_Sort\ISort.cs" />
+    <Compile Include="Search_Sort\Selection_Sort.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
