@@ -46,5 +46,12 @@ namespace Algorithms_Test
             var mergeSort = new Merge_Sort<int>(_inputList);
             Assert.IsTrue(mergeSort.Sort().SequenceEqual(_sortedList), "Merge sort is working as expected");
         }
+
+        [TestMethod]
+        public void Heap_Sort_Test()
+        {
+            var heapSort = new Heap_Sort<int>(_inputList);
+            Assert.IsTrue(heapSort.Sort().SequenceEqual(_sortedList), "Merge sort is working as expected");
+        }
     }
 }
