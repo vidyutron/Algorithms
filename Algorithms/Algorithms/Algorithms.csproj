@@ -48,7 +48,10 @@
     <Compile Include="Quiz_Pratice\LongestCommonSubString.cs" />
     <Compile Include="Quiz_Pratice\SubArray_Sum.cs" />
     <Compile Include="Search_Sort\Bubble_Sort.cs" />
+    <Compile Include="Search_Sort\Heap_Sort.cs" />
+    <Compile Include="Search_Sort\Insertion_Sort.cs" />
     <Compile Include="Search_Sort\ISort.cs" />
+    <Compile Include="Search_Sort\Merge_Sort.cs" />
     <Compile Include="Search_Sort\Selection_Sort.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

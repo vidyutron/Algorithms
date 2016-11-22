@@ -9,28 +9,49 @@ namespace Algorithms_Test
     [TestClass]
     public class Search_Sort
     {
+        private List<int> _inputList;
+        private List<int> _sortedList;
+
+        [TestInitialize]
+        public void TestInit()
+        {
+            _inputList = new List<int> { 6, 78, 3, 2, 9, 23, 67 };
+            _sortedList = new List<int> { 2, 3, 6, 9, 23, 67, 78 };
+        }
+
         [TestMethod]
         public void Selection_Sort_Test()
         {
-            var inputList = new List<int> { 6, 78, 3, 2, 9, 23, 67 };
-            var sortedList = new List<int> { 2, 3, 6, 9, 23, 67, 78 };
-            var selectionSort = new Selection_Sort<int>(inputList);
-            //var inputList = new List<string> { "goat","diablo","bomb","yeti" };
-            //var sortedList = new List<string> { "bomb", "diablo", "goat", "yeti" };
-            //var selectionSort = new Selection_Sort<string>(inputList);
-            Assert.IsTrue(selectionSort.Sort().SequenceEqual(sortedList), "Selection sort is working as expected");
+            var selectionSort = new Selection_Sort<int>(_inputList);
+            Assert.IsTrue(selectionSort.Sort().SequenceEqual(_sortedList), "Selection sort is working as expected");
         }
 
         [TestMethod]
         public void Bubble_Sort_Test()
         {
-            var inputList = new List<int> { 6, 78, 3, 2, 9, 23, 67 };
-            var sortedList = new List<int> { 2, 3, 6, 9, 23, 67, 78 };
-            var bubbleSort = new Bubble_Sort<int>(inputList);
-            //var inputList = new List<string> { "goat","diablo","bomb","yeti" };
-            //var sortedList = new List<string> { "bomb", "diablo", "goat", "yeti" };
-            //var selectionSort = new Selection_Sort<string>(inputList);
-            Assert.IsTrue(bubbleSort.Sort().SequenceEqual(sortedList), "Selection sort is working as expected");
+            var bubbleSort = new Bubble_Sort<int>(_inputList);
+            Assert.IsTrue(bubbleSort.Sort().SequenceEqual(_sortedList), "Bubble sort is working as expected");
+        }
+
+        [TestMethod]
+        public void Insertion_Sort_Test()
+        {
+            var insertionSort = new Insertion_Sort<int>(_inputList);
+            Assert.IsTrue(insertionSort.Sort().SequenceEqual(_sortedList), "Insertion sort is working as expected");
+        }
+
+        [TestMethod]
+        public void Merge_Sort_Test()
+        {
+            var mergeSort = new Merge_Sort<int>(_inputList);
+            Assert.IsTrue(mergeSort.Sort().SequenceEqual(_sortedList), "Merge sort is working as expected");
+        }
+
+        [TestMethod]
+        public void Heap_Sort_Test()
+        {
+            var heapSort = new Heap_Sort<int>(_inputList);
+            Assert.IsTrue(heapSort.Sort().SequenceEqual(_sortedList), "Merge sort is working as expected");
         }
     }
 }
