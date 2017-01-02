@@ -52,6 +52,7 @@
     <Compile Include="Search_Sort\Insertion_Sort.cs" />
     <Compile Include="Search_Sort\ISort.cs" />
     <Compile Include="Search_Sort\Merge_Sort.cs" />
+    <Compile Include="Search_Sort\Radix_Sort.cs" />
     <Compile Include="Search_Sort\Selection_Sort.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
