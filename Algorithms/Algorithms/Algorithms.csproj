@@ -53,8 +53,10 @@
     <Compile Include="Search_Sort\Insertion_Sort.cs" />
     <Compile Include="Search_Sort\ISort.cs" />
     <Compile Include="Search_Sort\Merge_Sort.cs" />
+    <Compile Include="Search_Sort\Quick_Sort.cs" />
     <Compile Include="Search_Sort\Radix_Sort.cs" />
     <Compile Include="Search_Sort\Selection_Sort.cs" />
+    <Compile Include="Search_Sort\Shell_Sort.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

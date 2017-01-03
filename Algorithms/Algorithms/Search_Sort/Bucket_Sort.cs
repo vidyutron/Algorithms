@@ -22,7 +22,7 @@ namespace Algorithms.Search_Sort
         {
             var result = new List<T>();
             var buckets = new List<T>[_bucketCount];
-            for(int i = 0; i < _inputList.Count; i++)
+            for(int i = 0; i < _bucketCount; i++)
             {
                 buckets[i] = new List<T>();
             }

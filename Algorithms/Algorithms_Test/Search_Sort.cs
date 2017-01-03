@@ -71,7 +71,14 @@ namespace Algorithms_Test
         public void Bucket_Sort_Test()
         {
             var bucketSort = new Bucket_Sort<int>(_inputList, 10);
-            Assert.IsTrue(bucketSort.Sort().SequenceEqual(_sortedList), "Radix sort is working as expected");
+            Assert.IsTrue(bucketSort.Sort().SequenceEqual(_sortedList), "Bucket sort is working as expected");
+        }
+
+        [TestMethod]
+        public void Shell_Sort_Test()
+        {
+            var shellSort = new Shell_Sort<int>(_inputList);
+            Assert.IsTrue(shellSort.Sort().SequenceEqual(_sortedList), "Shell sort is working as expected");
         }
     }
 }
