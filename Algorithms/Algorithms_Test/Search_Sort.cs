@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Algorithms.Search_Sort;
 using System.Collections.Generic;
 using System.Linq;
+using Algorithms.Search_Sort.Scenarios;
 
 namespace Algorithms_Test
 {
@@ -80,5 +81,22 @@ namespace Algorithms_Test
             var shellSort = new Shell_Sort<int>(_inputList);
             Assert.IsTrue(shellSort.Sort().SequenceEqual(_sortedList), "Shell sort is working as expected");
         }
+
+        [TestMethod]
+        public void Comb_Sort_Test()
+        {
+            var combSort = new Comb_Sort<int>(_inputList);
+            Assert.IsTrue(combSort.Sort().SequenceEqual(_sortedList), "Comb sort is working as expected");
+        }
+
+        //Scenarios
+        [TestMethod]
+        public void K_ClosestElements_Test()
+        { 
+            var tempRef = new List<int>() { 6, 9, 67 };
+            var kClosestElements = new K_ClosestElements(_sortedList,23,3);
+            Assert.IsTrue(kClosestElements.FindClosest_K().SequenceEqual(tempRef), "K Closest Elements is working as expected");
+        }
+
     }
 }

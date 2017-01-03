@@ -49,12 +49,15 @@
     <Compile Include="Quiz_Pratice\SubArray_Sum.cs" />
     <Compile Include="Search_Sort\Bubble_Sort.cs" />
     <Compile Include="Search_Sort\Bucket_Sort.cs" />
+    <Compile Include="Search_Sort\Comb_Sort.cs" />
     <Compile Include="Search_Sort\Heap_Sort.cs" />
     <Compile Include="Search_Sort\Insertion_Sort.cs" />
     <Compile Include="Search_Sort\ISort.cs" />
     <Compile Include="Search_Sort\Merge_Sort.cs" />
+    <Compile Include="Search_Sort\Pigeonhole_Sort.cs" />
     <Compile Include="Search_Sort\Quick_Sort.cs" />
     <Compile Include="Search_Sort\Radix_Sort.cs" />
+    <Compile Include="Search_Sort\Scenarios\K_ClosestElements.cs" />
     <Compile Include="Search_Sort\Selection_Sort.cs" />
     <Compile Include="Search_Sort\Shell_Sort.cs" />
   </ItemGroup>
