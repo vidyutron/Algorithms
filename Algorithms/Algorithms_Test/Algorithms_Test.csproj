@@ -45,11 +45,14 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="DS_Algo_Narasimha\LinkedLists\LinkedListTest.cs" />
     <Compile Include="HackerRank.cs" />
     <Compile Include="Search_Sort.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -65,9 +68,7 @@
       <Name>DS_Algorithm_Narasimha</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DS_Algo_Narasimha\LinkedLists\" />
-  </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

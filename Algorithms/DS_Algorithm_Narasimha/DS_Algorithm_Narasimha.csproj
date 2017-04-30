@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LinkedLists\DoubleLL.cs" />
+    <Compile Include="LinkedLists\ListNode.cs" />
     <Compile Include="LinkedLists\RolledUpLL.cs" />
     <Compile Include="LinkedLists\SingleLL.cs" />
     <Compile Include="Program.cs" />
