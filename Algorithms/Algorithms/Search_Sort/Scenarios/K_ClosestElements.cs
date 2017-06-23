@@ -58,6 +58,7 @@ namespace Algorithms.Search_Sort.Scenarios
                     tempList.Add(_inputList[left--]);
                 else
                     tempList.Add(_inputList[right++]);
+                count++;
             }
             while (count<_elementCount&&left>=0)
             {

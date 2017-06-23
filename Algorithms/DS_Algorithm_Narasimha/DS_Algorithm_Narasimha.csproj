@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Graphs\DijkstraAdjList.cs" />
     <Compile Include="LinkedLists\DoubleLL.cs" />
     <Compile Include="LinkedLists\ListNode.cs" />
     <Compile Include="LinkedLists\RolledUpLL.cs" />
