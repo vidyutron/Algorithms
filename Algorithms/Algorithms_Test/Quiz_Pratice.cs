@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Algorithms.Quiz_Pratice;
 using System.Collections.Generic;
+using Algorithms.Quiz_Practice;
 
 namespace Algorithms_Test
 {
@@ -23,6 +24,29 @@ namespace Algorithms_Test
             var firstString = new List<int>{ 1, 2, 3 };
             var lcs = new SubArray_Sum(firstString);
             var lcsReturn = lcs.Summation();
+        }
+
+        [TestMethod]
+        public void Anagrams_Test()
+        {
+            var testList=new List<string> { "abhishek", "abhshiek" };
+            var testIsAnagram = new Anagrams(testList);
+            //Assert.AreEqual(true, testIsAnagram.CheckAnagram(),"are anagrams");
+
+            var asciiSum = testIsAnagram.AsciiSum("Sum".ToCharArray());
+
+            var d = new Dictionary<string, bool>();
+            var a = new string[] { "a", "b", "c", "d", "longer", "words", "also","d" };
+
+   
+                foreach (string s in a)
+                {
+                    d[s] = true;
+                    d.ContainsKey(s);
+                }
+
+
+            var something = "das";
         }
     }
 }

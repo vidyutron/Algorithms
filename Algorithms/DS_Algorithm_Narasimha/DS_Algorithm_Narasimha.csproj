@@ -46,6 +46,7 @@
     <Compile Include="LinkedLists\CircularLL.cs" />
     <Compile Include="LinkedLists\CLLNode.cs" />
     <Compile Include="LinkedLists\DLLNode.cs" />
+    <Compile Include="Graphs\DijkstraAdjList.cs" />
     <Compile Include="LinkedLists\DoubleLL.cs" />
     <Compile Include="LinkedLists\ListNode.cs" />
     <Compile Include="LinkedLists\NthNodeFromEnd.cs" />

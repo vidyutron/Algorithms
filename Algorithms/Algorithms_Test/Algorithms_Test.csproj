@@ -52,6 +52,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="DS_Algo_Narasimha\Graphs\DijkstraTest.cs" />
     <Compile Include="DS_Algo_Narasimha\LinkedLists\LinkedListTest.cs" />
     <Compile Include="DS_Algo_Narasimha\Trees\BinaryTree\BinaryTree.cs" />
     <Compile Include="DS_Algo_Narasimha\Trees\BinaryTree\Practise.cs" />
