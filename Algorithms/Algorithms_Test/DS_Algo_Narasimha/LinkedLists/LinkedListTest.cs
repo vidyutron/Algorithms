@@ -7,6 +7,13 @@ namespace Algorithms_Test.DS_Algo_Narasimha.LinkedLists
     [TestClass]
     public class LinkedListTest
     {
+        
+        [TestInitialize]
+        public void LoadData()
+        {
+
+        }
+
         [TestMethod]
         public void SingleLinkedList()
         {
@@ -40,6 +47,25 @@ namespace Algorithms_Test.DS_Algo_Narasimha.LinkedLists
             Assert.AreEqual(outputDeleteMiddle, "[ 45,23 ]");
             //Console.ReadKey();
 
+        }
+        [TestMethod]
+        public void DoubleLinkedList()
+        {
+            //var dllNode = new DLLNode(25);
+            var dllList = new DoubleLL();
+            dllList.InsertBegin(34);
+            dllList.InsertTail(45);
+            dllList.InsertTail(67);
+
+            var outputInsert = dllList.DLLToString();
+            Assert.AreEqual(outputInsert, "[ 34,45,67 ]");
+        }
+
+        [TestMethod]
+        public void SkipListLinkedList()
+        {
+            //var skipLL = new SkipListLL<Int32,int>();
+            //skipLL.Add
         }
     }
 }

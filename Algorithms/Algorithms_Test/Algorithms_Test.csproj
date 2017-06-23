@@ -53,6 +53,9 @@
   </Choose>
   <ItemGroup>
     <Compile Include="DS_Algo_Narasimha\LinkedLists\LinkedListTest.cs" />
+    <Compile Include="DS_Algo_Narasimha\Trees\BinaryTree\BinaryTree.cs" />
+    <Compile Include="DS_Algo_Narasimha\Trees\BinaryTree\Practise.cs" />
+    <Compile Include="DS_Algo_Narasimha\Trees\BinaryTree\TreeTraversal.cs" />
     <Compile Include="HackerRank.cs" />
     <Compile Include="Search_Sort.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -68,7 +71,6 @@
       <Name>DS_Algorithm_Narasimha</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

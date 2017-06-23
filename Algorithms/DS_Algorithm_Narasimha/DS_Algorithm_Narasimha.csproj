@@ -43,12 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LinkedLists\CircularLL.cs" />
+    <Compile Include="LinkedLists\CLLNode.cs" />
+    <Compile Include="LinkedLists\DLLNode.cs" />
     <Compile Include="LinkedLists\DoubleLL.cs" />
     <Compile Include="LinkedLists\ListNode.cs" />
+    <Compile Include="LinkedLists\NthNodeFromEnd.cs" />
     <Compile Include="LinkedLists\RolledUpLL.cs" />
     <Compile Include="LinkedLists\SingleLL.cs" />
+    <Compile Include="LinkedLists\SkipListLL.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Trees\BinaryTrees\BTNode.cs" />
+    <Compile Include="Trees\BinaryTrees\CommonOpsBT.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
