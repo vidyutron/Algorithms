@@ -116,9 +116,20 @@ namespace DS_Algorithm_Narasimha.Graphs
             if (right < minheap.Size && minheap.HeapList[right].Dist <
                 minheap.HeapList[smallest].Dist)
                 smallest = right;
+            if (smallest != idx)
+            {
+                //the nodes to be swapped in min heap
+                var smallestNode = minheap.HeapList[smallest];
+                var idxNode = minheap.HeapList[idx];
 
-            //swap nodes
-            SwapMinHeapNode(ref minheap.HeapList[smallest], ref minheap.HeapList[idx]);
+                //swap positions
+                minheap.Position[smallestNode.V] = idx;
+                minheap.Position[idxNode.V] = smallest;
+                //swap nodes
+                SwapMinHeapNode(ref minheap.HeapList[smallest], ref minheap.HeapList[idx]);
+                MinHeapify(minheap, smallest);
+            }
+
         }
 
         public bool IsEmpty(MinHeap minheap)

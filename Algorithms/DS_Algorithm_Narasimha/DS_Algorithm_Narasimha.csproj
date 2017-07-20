@@ -55,6 +55,8 @@
     <Compile Include="LinkedLists\SkipListLL.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strings\LongestSubstringNR.cs" />
+    <Compile Include="Strings\Palindrome.cs" />
     <Compile Include="Trees\BinaryTrees\BTNode.cs" />
     <Compile Include="Trees\BinaryTrees\CommonOpsBT.cs" />
   </ItemGroup>
