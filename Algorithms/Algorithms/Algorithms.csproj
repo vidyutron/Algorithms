@@ -43,12 +43,16 @@
   <ItemGroup>
     <Compile Include="Array_Strings\ArrayAndStrings.cs" />
     <Compile Include="Array_Strings\Helper.cs" />
+    <Compile Include="DS\Trees\BNNode.cs" />
+    <Compile Include="DS\Trees\CommonOperations.cs" />
+    <Compile Include="DS\Trees\Heap.cs" />
     <Compile Include="HackerRank\DS\2d_Array.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quiz_Pratice\LongestCommonSubString.cs" />
     <Compile Include="Quiz_Pratice\SubArray_Sum.cs" />
     <Compile Include="Quiz_Pratice\Anagrams.cs" />
+    <Compile Include="Search_Sort\AlllCommonSort.cs" />
     <Compile Include="Search_Sort\Bubble_Sort.cs" />
     <Compile Include="Search_Sort\Bucket_Sort.cs" />
     <Compile Include="Search_Sort\Comb_Sort.cs" />
@@ -62,6 +66,10 @@
     <Compile Include="Search_Sort\Scenarios\K_ClosestElements.cs" />
     <Compile Include="Search_Sort\Selection_Sort.cs" />
     <Compile Include="Search_Sort\Shell_Sort.cs" />
+    <Compile Include="Utility\Counter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DS\LinkedLists\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

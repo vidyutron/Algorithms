@@ -98,5 +98,17 @@ namespace Algorithms_Test
             Assert.IsTrue(kClosestElements.FindClosest_K().SequenceEqual(tempRef), "K Closest Elements is working as expected");
         }
 
+        [TestMethod]
+        public void AllCommonSort_Test()
+        {
+            var commonSort = new AllCommonSort();
+            commonSort.BubbelSort();
+            commonSort.InsertionSort();
+            commonSort.SelectionSort();
+            commonSort.MergeSort();
+            commonSort.QuickSort();
+            commonSort.FinalSummary();
+        }
+
     }
 }
