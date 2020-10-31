@@ -21,13 +21,23 @@ namespace StrutureAlgoProj
 
         public void Run()
         {
-            Console.WriteLine($"Randomly Generated String : {_randGen.StringSequence(54)}");
-            Console.WriteLine("Hello from App.cs");
+            //Console.WriteLine($"Randomly Generated String : {_randGen.StringSequence(54)}");
+            //Console.WriteLine("Hello from App.cs");
 
+            //var smeArrya = _randGen.OpenNumberArray(45680);
 
-
-            var smeArrya = _randGen.OpenNumberArray(45680);
+            TestRun();
             Console.ReadLine();
+        }
+
+        [DiagnosticAspect]
+        private void TestRun()
+        {
+            int sum = 0;
+            for (int i = 0; i < 1000000000; i++)
+            {
+                sum += i;
+            }
         }
     }
 }
